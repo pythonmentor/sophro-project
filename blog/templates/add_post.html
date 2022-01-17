@@ -8,15 +8,27 @@
 
 <h1>Add Post ...</h1>
 
-
-<br><br>
+{% if  user.is_authenticated %}
+ <br><br>
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
         {{form.as_p}}
         <button class="btn btn-secondary">Post</button>
 
-</div>
+</div> 
+
+<script>
+  var name = "{{ user.first_name }} {{ user.last_name }}";
+  document.getElementById("authorName").value = name;
+</script>
+
+{%  else %}
+
+You're not allowed here !!!!(and you know it ...)
+
+{% endif %}
+
     
 
 
