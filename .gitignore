@@ -1,4 +1,5 @@
 .venv
 .ENV
-migrations/
 db.sqlite3
+__urls.py
+__pycache__/

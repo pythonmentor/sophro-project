@@ -1,20 +1,22 @@
 {% extends "base.html" %}
 
 {% block title %}
-  Login !!
+  Profile !!
 {% endblock title %}
 
 {% block content %}
 
-<h1>Login ...</h1>
+<h1> Profile ...</h1>
 
 <br><br>
 
 <div class="form-group">
     <form method="POST">
         {% csrf_token %}
-        {{form.as_p }}
-        <button class="btn btn-secondary">Login</button>
+        {{form.as_p}}
+
+        <br>
+        <button class="btn btn-secondary">Updater Profile</button>
 
 </div>
   

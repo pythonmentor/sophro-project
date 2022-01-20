@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     'blog.apps.BlogConfig',
     'members.apps.MembersConfig',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

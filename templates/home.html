@@ -20,7 +20,8 @@
                 {% endif %}
                 
             {% endif %}
-        {{ post.content | slice:':200' | safe }}</li>
+            {{ post.snippet }}
+        </li>
     
     {% endfor %}
 </ul>

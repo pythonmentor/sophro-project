@@ -70,7 +70,6 @@ class AddPostView(CreateView):
     
 class AddCategoryView(CreateView):
     model = Category
-    # form_class = PostForm
     template_name='add_category.html'
     fields = '__all__'
     
